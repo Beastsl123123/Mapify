@@ -1,0 +1,8 @@
+NAME,COUNTRY,LAT,LON,ELEV,TYPE
+Mount Fuji,Japan,35.3606,138.7274,3776,Stratovolcano
+Mount Etna,Italy,37.7510,15.0040,3329,Stratovolcano
+Mount Vesuvius,Italy,40.8213,14.4268,1281,Stratovolcano
+Mount Merapi,Indonesia,-7.5400,110.4467,2911,Stratovolcano
+Nyiragongo,DR Congo,-1.5200,29.2500,3470,Stratovolcano
+Mount Kilimanjaro,Tanzania,-3.0674,37.3556,5895,Stratovolcano
+Mount Erebus,Antarctica,-77.5300,167.1700,3794,Stratovolcano

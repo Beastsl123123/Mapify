@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_12c3f10ecacd47f29f7159e2443c2586 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_12c3f10ecacd47f29f7159e2443c2586" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_12c3f10ecacd47f29f7159e2443c2586 = L.map(
+                "map_12c3f10ecacd47f29f7159e2443c2586",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b5370b3279e9f5a57cbd7abe3320614a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b5370b3279e9f5a57cbd7abe3320614a.addTo(map_12c3f10ecacd47f29f7159e2443c2586);
+        
+    
+            var marker_cluster_172621a0d39a910b4544f7ca34766628 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_87878cdf57bec58b3aabe9aa70d0d7f3 = L.circleMarker(
+                [48.7767982, -121.810997],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_172621a0d39a910b4544f7ca34766628);
+        
+    
+        var popup_a4d37d85e198c97ebf1bf64e3abd2f70 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_948a5068fb925a027777193b01d38c44 = $(`<div id="html_948a5068fb925a027777193b01d38c44" style="width: 100.0%; height: 100.0%;">Elevation: 3285 m<br><a href='https://www.volcanodiscovery.com/48.7767982,-121.810997' target='_blank'>More info</a></div>`)[0];
+                popup_a4d37d85e198c97ebf1bf64e3abd2f70.setContent(html_948a5068fb925a027777193b01d38c44);
+            
+        
+
+        circle_marker_87878cdf57bec58b3aabe9aa70d0d7f3.bindPopup(popup_a4d37d85e198c97ebf1bf64e3abd2f70)
+        ;
+
+        
+    
+    
+            circle_marker_87878cdf57bec58b3aabe9aa70d0d7f3.bindTooltip(
+                `<div>
+                     3285 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_83b04766b2291a15bfa9e83142cc2bd0 = L.circleMarker(
+                [48.1118011, -121.1110001],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_172621a0d39a910b4544f7ca34766628);
+        
+    
+        var popup_b928cfa3ccc4cbc547dc87bef78e8753 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2aaf7f6519136544711205410a7428e6 = $(`<div id="html_2aaf7f6519136544711205410a7428e6" style="width: 100.0%; height: 100.0%;">Elevation: 3213 m<br><a href='https://www.volcanodiscovery.com/48.1118011,-121.1110001' target='_blank'>More info</a></div>`)[0];
+                popup_b928cfa3ccc4cbc547dc87bef78e8753.setContent(html_2aaf7f6519136544711205410a7428e6);
+            
+        
+
+        circle_marker_83b04766b2291a15bfa9e83142cc2bd0.bindPopup(popup_b928cfa3ccc4cbc547dc87bef78e8753)
+        ;
+
+        
+    
+    
+            circle_marker_83b04766b2291a15bfa9e83142cc2bd0.bindTooltip(
+                `<div>
+                     3213 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b8eb0ce75b2b5b4c7426ef61784dfe87 = L.circleMarker(
+                [46.8698006, -121.7509995],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_172621a0d39a910b4544f7ca34766628);
+        
+    
+        var popup_1b2506dd20a0443f74873e5b9ecce93b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c11e81bba0ad307d80dbad0a6abf7979 = $(`<div id="html_c11e81bba0ad307d80dbad0a6abf7979" style="width: 100.0%; height: 100.0%;">Elevation: 4392 m<br><a href='https://www.volcanodiscovery.com/46.8698006,-121.7509995' target='_blank'>More info</a></div>`)[0];
+                popup_1b2506dd20a0443f74873e5b9ecce93b.setContent(html_c11e81bba0ad307d80dbad0a6abf7979);
+            
+        
+
+        circle_marker_b8eb0ce75b2b5b4c7426ef61784dfe87.bindPopup(popup_1b2506dd20a0443f74873e5b9ecce93b)
+        ;
+
+        
+    
+    
+            circle_marker_b8eb0ce75b2b5b4c7426ef61784dfe87.bindTooltip(
+                `<div>
+                     4392 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3779e1e250268e6c376fd478a4cf0e2f = L.circleMarker(
+                [46.1997986, -122.1809998],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_172621a0d39a910b4544f7ca34766628);
+        
+    
+        var popup_2978f76c0723fdac73efbead5a407ce9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61a844e7522b980e871333f483b42f7d = $(`<div id="html_61a844e7522b980e871333f483b42f7d" style="width: 100.0%; height: 100.0%;">Elevation: 2549 m<br><a href='https://www.volcanodiscovery.com/46.1997986,-122.1809998' target='_blank'>More info</a></div>`)[0];
+                popup_2978f76c0723fdac73efbead5a407ce9.setContent(html_61a844e7522b980e871333f483b42f7d);
+            
+        
+
+        circle_marker_3779e1e250268e6c376fd478a4cf0e2f.bindPopup(popup_2978f76c0723fdac73efbead5a407ce9)
+        ;
+
+        
+    
+    
+            circle_marker_3779e1e250268e6c376fd478a4cf0e2f.bindTooltip(
+                `<div>
+                     2549 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1aa8be4253fbc0f381769bb88a856d36 = L.circleMarker(
+                [46.2057991, -121.4909973],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_172621a0d39a910b4544f7ca34766628);
+        
+    
+        var popup_654f757812fca5d6c178a461476ee9ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4a5dcd701bcfe476af35d06d5ab8d08 = $(`<div id="html_e4a5dcd701bcfe476af35d06d5ab8d08" style="width: 100.0%; height: 100.0%;">Elevation: 3742 m<br><a href='https://www.volcanodiscovery.com/46.2057991,-121.4909973' target='_blank'>More info</a></div>`)[0];
+                popup_654f757812fca5d6c178a461476ee9ea.setContent(html_e4a5dcd701bcfe476af35d06d5ab8d08);
+            
+        
+
+        circle_marker_1aa8be4253fbc0f381769bb88a856d36.bindPopup(popup_654f757812fca5d6c178a461476ee9ea)
+        ;
+
+        
+    
+    
+            circle_marker_1aa8be4253fbc0f381769bb88a856d36.bindTooltip(
+                `<div>
+                     3742 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_105c8d38f084cd5f00b28882ed6235bb = L.circleMarker(
+                [45.8797989, -122.0810013],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_172621a0d39a910b4544f7ca34766628);
+        
+    
+        var popup_eaeeef04421650bfa4e7b64fde3c24a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a70d4fa80b66cb07666fbf8eeaa810bd = $(`<div id="html_a70d4fa80b66cb07666fbf8eeaa810bd" style="width: 100.0%; height: 100.0%;">Elevation: 1329 m<br><a href='https://www.volcanodiscovery.com/45.8797989,-122.0810013' target='_blank'>More info</a></div>`)[0];
+                popup_eaeeef04421650bfa4e7b64fde3c24a5.setContent(html_a70d4fa80b66cb07666fbf8eeaa810bd);
+            
+        
+
+        circle_marker_105c8d38f084cd5f00b28882ed6235bb.bindPopup(popup_eaeeef04421650bfa4e7b64fde3c24a5)
+        ;
+
+        
+    
+    
+            circle_marker_105c8d38f084cd5f00b28882ed6235bb.bindTooltip(
+                `<div>
+                     1329 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a27199f28eba6aa3bfedb8e1bf0ed267 = L.circleMarker(
+                [45.9297981, -121.8209991],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_172621a0d39a910b4544f7ca34766628);
+        
+    
+        var popup_2ee3c7655baa855b810252d0e743b5ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03e0c9714db85299462821fd31ad9128 = $(`<div id="html_03e0c9714db85299462821fd31ad9128" style="width: 100.0%; height: 100.0%;">Elevation: 1806 m<br><a href='https://www.volcanodiscovery.com/45.9297981,-121.8209991' target='_blank'>More info</a></div>`)[0];
+                popup_2ee3c7655baa855b810252d0e743b5ef.setContent(html_03e0c9714db85299462821fd31ad9128);
+            
+        
+
+        circle_marker_a27199f28eba6aa3bfedb8e1bf0ed267.bindPopup(popup_2ee3c7655baa855b810252d0e743b5ef)
+        ;
+
+        
+    
+    
+            circle_marker_a27199f28eba6aa3bfedb8e1bf0ed267.bindTooltip(
+                `<div>
+                     1806 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f291835a918106412d0f5c081338e377 = L.circleMarker(
+                [45.3737984, -121.6910019],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_172621a0d39a910b4544f7ca34766628);
+        
+    
+        var popup_f784d647e00df6934079eea134d46128 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a665a3d2c6b67d5b24e8c15e3c665ef6 = $(`<div id="html_a665a3d2c6b67d5b24e8c15e3c665ef6" style="width: 100.0%; height: 100.0%;">Elevation: 3426 m<br><a href='https://www.volcanodiscovery.com/45.3737984,-121.6910019' target='_blank'>More info</a></div>`)[0];
+                popup_f784d647e00df6934079eea134d46128.setContent(html_a665a3d2c6b67d5b24e8c15e3c665ef6);
+            
+        
+
+        circle_marker_f291835a918106412d0f5c081338e377.bindPopup(popup_f784d647e00df6934079eea134d46128)
+        ;
+
+        
+    
+    
+            circle_marker_f291835a918106412d0f5c081338e377.bindTooltip(
+                `<div>
+                     3426 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_de78d50a2fab593ba1f184f5d1500974 = L.circleMarker(
+                [44.6917992, -121.8010025],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_172621a0d39a910b4544f7ca34766628);
+        
+    
+        var popup_074c93388663b8c21a04680b564ad1c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2bb0eae9c30fbaaf51d10a825ee2cce = $(`<div id="html_e2bb0eae9c30fbaaf51d10a825ee2cce" style="width: 100.0%; height: 100.0%;">Elevation: 3199 m<br><a href='https://www.volcanodiscovery.com/44.6917992,-121.8010025' target='_blank'>More info</a></div>`)[0];
+                popup_074c93388663b8c21a04680b564ad1c2.setContent(html_e2bb0eae9c30fbaaf51d10a825ee2cce);
+            
+        
+
+        circle_marker_de78d50a2fab593ba1f184f5d1500974.bindPopup(popup_074c93388663b8c21a04680b564ad1c2)
+        ;
+
+        
+    
+    
+            circle_marker_de78d50a2fab593ba1f184f5d1500974.bindTooltip(
+                `<div>
+                     3199 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0866d2e9ecadcd489ec50f4844733d0e = L.circleMarker(
+                [44.4197998, -121.7710037],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_172621a0d39a910b4544f7ca34766628);
+        
+    
+        var popup_5dd10562657b4df2e0338f01292e6530 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ed0ae11363705e275afef723248930f = $(`<div id="html_1ed0ae11363705e275afef723248930f" style="width: 100.0%; height: 100.0%;">Elevation: 1230 m<br><a href='https://www.volcanodiscovery.com/44.4197998,-121.7710037' target='_blank'>More info</a></div>`)[0];
+                popup_5dd10562657b4df2e0338f01292e6530.setContent(html_1ed0ae11363705e275afef723248930f);
+            
+        
+
+        circle_marker_0866d2e9ecadcd489ec50f4844733d0e.bindPopup(popup_5dd10562657b4df2e0338f01292e6530)
+        ;
+
+        
+    
+    
+            circle_marker_0866d2e9ecadcd489ec50f4844733d0e.bindTooltip(
+                `<div>
+                     1230 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_113a558ca19510fe5260818070cee6d9 = L.circleMarker(
+                [44.3797989, -121.9309998],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_172621a0d39a910b4544f7ca34766628);
+        
+    
+        var popup_aa56b7539ac8d584d84168583c23d908 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b08e8303cd8613708da0912c35f7104 = $(`<div id="html_1b08e8303cd8613708da0912c35f7104" style="width: 100.0%; height: 100.0%;">Elevation: 1664 m<br><a href='https://www.volcanodiscovery.com/44.3797989,-121.9309998' target='_blank'>More info</a></div>`)[0];
+                popup_aa56b7539ac8d584d84168583c23d908.setContent(html_1b08e8303cd8613708da0912c35f7104);
+            
+        
+
+        circle_marker_113a558ca19510fe5260818070cee6d9.bindPopup(popup_aa56b7539ac8d584d84168583c23d908)
+        ;
+
+        
+    
+    
+            circle_marker_113a558ca19510fe5260818070cee6d9.bindTooltip(
+                `<div>
+                     1664 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ffeb2ecbbc26c2398f2d16675bc9e258 = L.circleMarker(
+                [44.3317986, -121.8310013],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_172621a0d39a910b4544f7ca34766628);
+        
+    
+        var popup_379feb7f86a21a2d180a18dc6b95034a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_896758b0cdc2d4d100d2c1ed49bceda4 = $(`<div id="html_896758b0cdc2d4d100d2c1ed49bceda4" style="width: 100.0%; height: 100.0%;">Elevation: 2376 m<br><a href='https://www.volcanodiscovery.com/44.3317986,-121.8310013' target='_blank'>More info</a></div>`)[0];
+                popup_379feb7f86a21a2d180a18dc6b95034a.setContent(html_896758b0cdc2d4d100d2c1ed49bceda4);
+            
+        
+
+        circle_marker_ffeb2ecbbc26c2398f2d16675bc9e258.bindPopup(popup_379feb7f86a21a2d180a18dc6b95034a)
+        ;
+
+        
+    
+    
+            circle_marker_ffeb2ecbbc26c2398f2d16675bc9e258.bindTooltip(
+                `<div>
+                     2376 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_60a44e5c27eb292050d9be4dce8cc7aa = L.circleMarker(
+                [44.2848015, -121.8410034],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_172621a0d39a910b4544f7ca34766628);
+        
+    
+        var popup_51c541110b7da0623c8f04ee63b19d2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_957f12a74edc2782630fd3dcf2a25c1b = $(`<div id="html_957f12a74edc2782630fd3dcf2a25c1b" style="width: 100.0%; height: 100.0%;">Elevation: 2095 m<br><a href='https://www.volcanodiscovery.com/44.2848015,-121.8410034' target='_blank'>More info</a></div>`)[0];
+                popup_51c541110b7da0623c8f04ee63b19d2e.setContent(html_957f12a74edc2782630fd3dcf2a25c1b);
+            
+        
+
+        circle_marker_60a44e5c27eb292050d9be4dce8cc7aa.bindPopup(popup_51c541110b7da0623c8f04ee63b19d2e)
+        ;
+
+        
+    
+    
+            circle_marker_60a44e5c27eb292050d9be4dce8cc7aa.bindTooltip(
+                `<div>
+                     2095 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_416c3ac77e84181c42c8abe88730ea53 = L.circleMarker(
+                [44.1697998, -121.7710037],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_172621a0d39a910b4544f7ca34766628);
+        
+    
+        var popup_e14211c95239844c51964e213abb1460 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b641ce2244acd57584eb2bd374d0c0e6 = $(`<div id="html_b641ce2244acd57584eb2bd374d0c0e6" style="width: 100.0%; height: 100.0%;">Elevation: 3074 m<br><a href='https://www.volcanodiscovery.com/44.1697998,-121.7710037' target='_blank'>More info</a></div>`)[0];
+                popup_e14211c95239844c51964e213abb1460.setContent(html_b641ce2244acd57584eb2bd374d0c0e6);
+            
+        
+
+        circle_marker_416c3ac77e84181c42c8abe88730ea53.bindPopup(popup_e14211c95239844c51964e213abb1460)
+        ;
+
+        
+    
+    
+            circle_marker_416c3ac77e84181c42c8abe88730ea53.bindTooltip(
+                `<div>
+                     3074 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad4dbe7aedc5ccddf8ce8215ab4468f4 = L.circleMarker(
+                [44.0998001, -121.7710037],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_172621a0d39a910b4544f7ca34766628);
+        
+    
+        var popup_5907001dbae625efa0e7a06a761f5447 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d00511a8d540db14d85886db2e8f02a3 = $(`<div id="html_d00511a8d540db14d85886db2e8f02a3" style="width: 100.0%; height: 100.0%;">Elevation: 3157 m<br><a href='https://www.volcanodiscovery.com/44.0998001,-121.7710037' target='_blank'>More info</a></div>`)[0];
+                popup_5907001dbae625efa0e7a06a761f5447.setContent(html_d00511a8d540db14d85886db2e8f02a3);
+            
+        
+
+        circle_marker_ad4dbe7aedc5ccddf8ce8215ab4468f4.bindPopup(popup_5907001dbae625efa0e7a06a761f5447)
+        ;
+
+        
+    
+    
+            circle_marker_ad4dbe7aedc5ccddf8ce8215ab4468f4.bindTooltip(
+                `<div>
+                     3157 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7526791f07539d94a686bfbcfac24085 = L.circleMarker(
+                [43.9788017, -121.6809998],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_172621a0d39a910b4544f7ca34766628);
+        
+    
+        var popup_c1bb2d963ccd070fd922e5d71a55fac3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_57fda7db5cd796e104def7e3d8424878 = $(`<div id="html_57fda7db5cd796e104def7e3d8424878" style="width: 100.0%; height: 100.0%;">Elevation: 2763 m<br><a href='https://www.volcanodiscovery.com/43.9788017,-121.6809998' target='_blank'>More info</a></div>`)[0];
+                popup_c1bb2d963ccd070fd922e5d71a55fac3.setContent(html_57fda7db5cd796e104def7e3d8424878);
+            
+        
+
+        circle_marker_7526791f07539d94a686bfbcfac24085.bindPopup(popup_c1bb2d963ccd070fd922e5d71a55fac3)
+        ;
+
+        
+    
+    
+            circle_marker_7526791f07539d94a686bfbcfac24085.bindTooltip(
+                `<div>
+                     2763 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e2f436f3605925230898672e1376b48c = L.circleMarker(
+                [43.7218018, -121.2210007],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_172621a0d39a910b4544f7ca34766628);
+        
+    
+        var popup_2d9ed04a1bdb05e9b09f16d2c53dae90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5974401258a5a58ee6cea7f09b32754c = $(`<div id="html_5974401258a5a58ee6cea7f09b32754c" style="width: 100.0%; height: 100.0%;">Elevation: 2434 m<br><a href='https://www.volcanodiscovery.com/43.7218018,-121.2210007' target='_blank'>More info</a></div>`)[0];
+                popup_2d9ed04a1bdb05e9b09f16d2c53dae90.setContent(html_5974401258a5a58ee6cea7f09b32754c);
+            
+        
+
+        circle_marker_e2f436f3605925230898672e1376b48c.bindPopup(popup_2d9ed04a1bdb05e9b09f16d2c53dae90)
+        ;
+
+        
+    
+    
+            circle_marker_e2f436f3605925230898672e1376b48c.bindTooltip(
+                `<div>
+                     2434 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ca823bd36a1b1d04f0171a9a9f8a2c90 = L.circleMarker(
+                [43.5698013, -121.8209991],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_172621a0d39a910b4544f7ca34766628);
+        
+    
+        var popup_5805e85d285cbd5f5d3d01fab0ff0908 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68892d3d0a3c761ebda57c7c71571747 = $(`<div id="html_68892d3d0a3c761ebda57c7c71571747" style="width: 100.0%; height: 100.0%;">Elevation: 2163 m<br><a href='https://www.volcanodiscovery.com/43.5698013,-121.8209991' target='_blank'>More info</a></div>`)[0];
+                popup_5805e85d285cbd5f5d3d01fab0ff0908.setContent(html_68892d3d0a3c761ebda57c7c71571747);
+            
+        
+
+        circle_marker_ca823bd36a1b1d04f0171a9a9f8a2c90.bindPopup(popup_5805e85d285cbd5f5d3d01fab0ff0908)
+        ;
+
+        
+    
+    
+            circle_marker_ca823bd36a1b1d04f0171a9a9f8a2c90.bindTooltip(
+                `<div>
+                     2163 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7913f7cd31f14e59c723c813ade2f0bd = L.circleMarker(
+                [43.5119019, -120.8610001],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_172621a0d39a910b4544f7ca34766628);
+        
+    
+        var popup_0de85753a3a96d7ae3e133c0ca7f9c0f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_346cb50b0a43db539d6bdb20a89e5685 = $(`<div id="html_346cb50b0a43db539d6bdb20a89e5685" style="width: 100.0%; height: 100.0%;">Elevation: 1698 m<br><a href='https://www.volcanodiscovery.com/43.5119019,-120.8610001' target='_blank'>More info</a></div>`)[0];
+                popup_0de85753a3a96d7ae3e133c0ca7f9c0f.setContent(html_346cb50b0a43db539d6bdb20a89e5685);
+            
+        
+
+        circle_marker_7913f7cd31f14e59c723c813ade2f0bd.bindPopup(popup_0de85753a3a96d7ae3e133c0ca7f9c0f)
+        ;
+
+        
+    
+    
+            circle_marker_7913f7cd31f14e59c723c813ade2f0bd.bindTooltip(
+                `<div>
+                     1698 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0a05a7ea371022a2ab899d875a443723 = L.circleMarker(
+                [43.240799, -122.1009979],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_172621a0d39a910b4544f7ca34766628);
+        
+    
+        var popup_48cf2abdffe99cf04b50b6d88ad17a6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1835e0917fe1f1b35a350a2c4af1a5c = $(`<div id="html_e1835e0917fe1f1b35a350a2c4af1a5c" style="width: 100.0%; height: 100.0%;">Elevation: 1956 m<br><a href='https://www.volcanodiscovery.com/43.240799,-122.1009979' target='_blank'>More info</a></div>`)[0];
+                popup_48cf2abdffe99cf04b50b6d88ad17a6f.setContent(html_e1835e0917fe1f1b35a350a2c4af1a5c);
+            
+        
+
+        circle_marker_0a05a7ea371022a2ab899d875a443723.bindPopup(popup_48cf2abdffe99cf04b50b6d88ad17a6f)
+        ;
+
+        
+    
+    
+            circle_marker_0a05a7ea371022a2ab899d875a443723.bindTooltip(
+                `<div>
+                     1956 m
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_172621a0d39a910b4544f7ca34766628.addTo(map_12c3f10ecacd47f29f7159e2443c2586);
+        
+    
+            var marker_cluster_e24627d44525e0d3bf89ed7026c48dc0 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_5b14fdb17aa0cde5f000ee28c96f3684 = L.circleMarker(
+                [35.3606, 138.7274],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e24627d44525e0d3bf89ed7026c48dc0);
+        
+    
+        var popup_a9e538beffe472819c4267bbdc297ec7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8bfa1860c98f9e1d523eab11aef58d03 = $(`<div id="html_8bfa1860c98f9e1d523eab11aef58d03" style="width: 100.0%; height: 100.0%;">     <b>Mount Fuji</b><br>     Country: Japan<br>     Elevation: 3776 m<br>     Type: Stratovolcano<br>     <a href='https://en.wikipedia.org/wiki/Mount_Fuji' target='_blank'>More info</a>     </div>`)[0];
+                popup_a9e538beffe472819c4267bbdc297ec7.setContent(html_8bfa1860c98f9e1d523eab11aef58d03);
+            
+        
+
+        circle_marker_5b14fdb17aa0cde5f000ee28c96f3684.bindPopup(popup_a9e538beffe472819c4267bbdc297ec7)
+        ;
+
+        
+    
+    
+            circle_marker_5b14fdb17aa0cde5f000ee28c96f3684.bindTooltip(
+                `<div>
+                     Mount Fuji
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a4567a0282f00c2b274fe01f2f7ad9a6 = L.circleMarker(
+                [37.751, 15.004],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e24627d44525e0d3bf89ed7026c48dc0);
+        
+    
+        var popup_50467469f27cd79432c382f9131a9a9a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_971fc227b2e3080e5a4d04ed785d89be = $(`<div id="html_971fc227b2e3080e5a4d04ed785d89be" style="width: 100.0%; height: 100.0%;">     <b>Mount Etna</b><br>     Country: Italy<br>     Elevation: 3329 m<br>     Type: Stratovolcano<br>     <a href='https://en.wikipedia.org/wiki/Mount_Etna' target='_blank'>More info</a>     </div>`)[0];
+                popup_50467469f27cd79432c382f9131a9a9a.setContent(html_971fc227b2e3080e5a4d04ed785d89be);
+            
+        
+
+        circle_marker_a4567a0282f00c2b274fe01f2f7ad9a6.bindPopup(popup_50467469f27cd79432c382f9131a9a9a)
+        ;
+
+        
+    
+    
+            circle_marker_a4567a0282f00c2b274fe01f2f7ad9a6.bindTooltip(
+                `<div>
+                     Mount Etna
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_164fba0109191c4ea91c515304ee47e8 = L.circleMarker(
+                [40.8213, 14.4268],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e24627d44525e0d3bf89ed7026c48dc0);
+        
+    
+        var popup_4c7aad59dc44f45d864ef4a1f1e31870 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_385247a7ead770d90f58cf8436785f47 = $(`<div id="html_385247a7ead770d90f58cf8436785f47" style="width: 100.0%; height: 100.0%;">     <b>Mount Vesuvius</b><br>     Country: Italy<br>     Elevation: 1281 m<br>     Type: Stratovolcano<br>     <a href='https://en.wikipedia.org/wiki/Mount_Vesuvius' target='_blank'>More info</a>     </div>`)[0];
+                popup_4c7aad59dc44f45d864ef4a1f1e31870.setContent(html_385247a7ead770d90f58cf8436785f47);
+            
+        
+
+        circle_marker_164fba0109191c4ea91c515304ee47e8.bindPopup(popup_4c7aad59dc44f45d864ef4a1f1e31870)
+        ;
+
+        
+    
+    
+            circle_marker_164fba0109191c4ea91c515304ee47e8.bindTooltip(
+                `<div>
+                     Mount Vesuvius
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_255dbd00e9286169c5cdcce875fb9781 = L.circleMarker(
+                [-7.54, 110.4467],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e24627d44525e0d3bf89ed7026c48dc0);
+        
+    
+        var popup_fe86a239cad93a0d8ee6fcbab37696ba = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4885a60beb01bffb227bdb6f41461176 = $(`<div id="html_4885a60beb01bffb227bdb6f41461176" style="width: 100.0%; height: 100.0%;">     <b>Mount Merapi</b><br>     Country: Indonesia<br>     Elevation: 2911 m<br>     Type: Stratovolcano<br>     <a href='https://en.wikipedia.org/wiki/Mount_Merapi' target='_blank'>More info</a>     </div>`)[0];
+                popup_fe86a239cad93a0d8ee6fcbab37696ba.setContent(html_4885a60beb01bffb227bdb6f41461176);
+            
+        
+
+        circle_marker_255dbd00e9286169c5cdcce875fb9781.bindPopup(popup_fe86a239cad93a0d8ee6fcbab37696ba)
+        ;
+
+        
+    
+    
+            circle_marker_255dbd00e9286169c5cdcce875fb9781.bindTooltip(
+                `<div>
+                     Mount Merapi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8762daa9f417b3d88d9811f625dd613b = L.circleMarker(
+                [-1.52, 29.25],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e24627d44525e0d3bf89ed7026c48dc0);
+        
+    
+        var popup_5e9353cae93d8deade889ad2387d383c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_00612db14567ccfb97c2e765412d7468 = $(`<div id="html_00612db14567ccfb97c2e765412d7468" style="width: 100.0%; height: 100.0%;">     <b>Nyiragongo</b><br>     Country: DR Congo<br>     Elevation: 3470 m<br>     Type: Stratovolcano<br>     <a href='https://en.wikipedia.org/wiki/Nyiragongo' target='_blank'>More info</a>     </div>`)[0];
+                popup_5e9353cae93d8deade889ad2387d383c.setContent(html_00612db14567ccfb97c2e765412d7468);
+            
+        
+
+        circle_marker_8762daa9f417b3d88d9811f625dd613b.bindPopup(popup_5e9353cae93d8deade889ad2387d383c)
+        ;
+
+        
+    
+    
+            circle_marker_8762daa9f417b3d88d9811f625dd613b.bindTooltip(
+                `<div>
+                     Nyiragongo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d42635ae97c3ddfde4573edccec79cb5 = L.circleMarker(
+                [-3.0674, 37.3556],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e24627d44525e0d3bf89ed7026c48dc0);
+        
+    
+        var popup_a75a30207ea3546fe3e0f3abb3177181 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dc35dae827c831b4a2b5fd97f4d64370 = $(`<div id="html_dc35dae827c831b4a2b5fd97f4d64370" style="width: 100.0%; height: 100.0%;">     <b>Mount Kilimanjaro</b><br>     Country: Tanzania<br>     Elevation: 5895 m<br>     Type: Stratovolcano<br>     <a href='https://en.wikipedia.org/wiki/Mount_Kilimanjaro' target='_blank'>More info</a>     </div>`)[0];
+                popup_a75a30207ea3546fe3e0f3abb3177181.setContent(html_dc35dae827c831b4a2b5fd97f4d64370);
+            
+        
+
+        circle_marker_d42635ae97c3ddfde4573edccec79cb5.bindPopup(popup_a75a30207ea3546fe3e0f3abb3177181)
+        ;
+
+        
+    
+    
+            circle_marker_d42635ae97c3ddfde4573edccec79cb5.bindTooltip(
+                `<div>
+                     Mount Kilimanjaro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a708315623ea449f7b3413b5cf75d608 = L.circleMarker(
+                [-77.53, 167.17],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_e24627d44525e0d3bf89ed7026c48dc0);
+        
+    
+        var popup_2635384972b0de810f4d013f469355d9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_49ad22b3631e1005bc1b1dc98394e112 = $(`<div id="html_49ad22b3631e1005bc1b1dc98394e112" style="width: 100.0%; height: 100.0%;">     <b>Mount Erebus</b><br>     Country: Antarctica<br>     Elevation: 3794 m<br>     Type: Stratovolcano<br>     <a href='https://en.wikipedia.org/wiki/Mount_Erebus' target='_blank'>More info</a>     </div>`)[0];
+                popup_2635384972b0de810f4d013f469355d9.setContent(html_49ad22b3631e1005bc1b1dc98394e112);
+            
+        
+
+        circle_marker_a708315623ea449f7b3413b5cf75d608.bindPopup(popup_2635384972b0de810f4d013f469355d9)
+        ;
+
+        
+    
+    
+            circle_marker_a708315623ea449f7b3413b5cf75d608.bindTooltip(
+                `<div>
+                     Mount Erebus
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_e24627d44525e0d3bf89ed7026c48dc0.addTo(map_12c3f10ecacd47f29f7159e2443c2586);
+        
+    
+            var feature_group_b5c7ff08392eb9cc61a1e3a78dc89b4d = L.featureGroup(
+                {
+}
+            );
+        
+    
+        function geo_json_73bf9d5ec8bac84183ca9da09190a8d3_styler(feature) {
+            switch(feature.properties.POP2005) {
+                case 5000000: 
+                    return {"fillColor": "green"};
+                case 15000000: 
+                    return {"fillColor": "orange"};
+                default:
+                    return {"fillColor": "red"};
+            }
+        }
+
+        function geo_json_73bf9d5ec8bac84183ca9da09190a8d3_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_73bf9d5ec8bac84183ca9da09190a8d3 = L.geoJson(null, {
+                onEachFeature: geo_json_73bf9d5ec8bac84183ca9da09190a8d3_onEachFeature,
+            
+                style: geo_json_73bf9d5ec8bac84183ca9da09190a8d3_styler,
+            ...{
+}
+        });
+
+        function geo_json_73bf9d5ec8bac84183ca9da09190a8d3_add (data) {
+            geo_json_73bf9d5ec8bac84183ca9da09190a8d3
+                .addData(data);
+        }
+            geo_json_73bf9d5ec8bac84183ca9da09190a8d3_add({"features": [{"geometry": {"coordinates": [[[-100.0, 40.0], [-101.0, 40.0], [-101.0, 41.0], [-100.0, 41.0], [-100.0, 40.0]]], "type": "Polygon"}, "properties": {"POP2005": 5000000}, "type": "Feature"}, {"geometry": {"coordinates": [[[10.0, 50.0], [11.0, 50.0], [11.0, 51.0], [10.0, 51.0], [10.0, 50.0]]], "type": "Polygon"}, "properties": {"POP2005": 15000000}, "type": "Feature"}, {"geometry": {"coordinates": [[[100.0, 10.0], [101.0, 10.0], [101.0, 11.0], [100.0, 11.0], [100.0, 10.0]]], "type": "Polygon"}, "properties": {"POP2005": 25000000}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_73bf9d5ec8bac84183ca9da09190a8d3.addTo(feature_group_b5c7ff08392eb9cc61a1e3a78dc89b4d);
+        
+    
+            feature_group_b5c7ff08392eb9cc61a1e3a78dc89b4d.addTo(map_12c3f10ecacd47f29f7159e2443c2586);
+        
+    
+            var layer_control_95883d7fe02a632f9725ce7bd53f1d9b_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_b5370b3279e9f5a57cbd7abe3320614a,
+                },
+                overlays :  {
+                    "U.S. Volcanoes" : marker_cluster_172621a0d39a910b4544f7ca34766628,
+                    "World Volcanoes" : marker_cluster_e24627d44525e0d3bf89ed7026c48dc0,
+                    "Population" : feature_group_b5c7ff08392eb9cc61a1e3a78dc89b4d,
+                },
+            };
+            let layer_control_95883d7fe02a632f9725ce7bd53f1d9b = L.control.layers(
+                layer_control_95883d7fe02a632f9725ce7bd53f1d9b_layers.base_layers,
+                layer_control_95883d7fe02a632f9725ce7bd53f1d9b_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_12c3f10ecacd47f29f7159e2443c2586);
+
+        
+</script>
+</html>

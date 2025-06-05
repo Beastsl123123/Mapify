@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-125.0, 24.396308], [-66.93457, 24.396308], [-66.93457, 49.384358], [-125.0, 49.384358]]]
+      },
+      "properties": {
+        "name": "United States",
+        "POP2005": 295734134
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-77.036871, 38.907192], [-77.036871, 38.907192], [-77.036871, 38.907192]]]
+      },
+      "properties": {
+        "name": "Washington D.C.",
+        "POP2005": 600000
+      }
+    }
+  ]
+}
